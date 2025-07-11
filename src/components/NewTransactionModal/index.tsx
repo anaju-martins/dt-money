@@ -4,7 +4,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'; 
 import { Controller, useForm } from 'react-hook-form';
 import * as z from 'zod';
-import { fields } from '@hookform/resolvers/ajv/src/__tests__/__fixtures__/data.js';
+
 
 const newTransactionFormSchema = z.object({
     description: z.string(),
@@ -26,7 +26,10 @@ export function NewTransactionModal(){
 
 
     } = useForm<NewTransactionFormInputs>({
-        resolver: zodResolver(newTransactionFormSchema)
+        resolver: zodResolver(newTransactionFormSchema),
+        defaultValues: {
+            type: 'income'
+        }
     })
 
     async function handleCreateNewTransaction(data: NewTransactionFormInputs){
