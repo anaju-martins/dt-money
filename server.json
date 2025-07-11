@@ -71,6 +71,22 @@
       "category": "Educação",
       "price": 200,
       "createdAt": "2025-06-19T11:45:00.000Z"
+    },
+    {
+      "description": "Marmita Almoço",
+      "price": 23,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2025-07-11T01:33:06.731Z",
+      "id": 10
+    },
+    {
+      "description": "Água com Gás",
+      "price": 2,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2025-07-11T01:51:07.360Z",
+      "id": 11
     }
   ]
 }
